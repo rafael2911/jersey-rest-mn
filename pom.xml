@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.devmedia</groupId>
-	<artifactId>jersey-rest-nm</artifactId>
+	<artifactId>jersey-rest-mn</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -49,7 +49,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>jersey-rest-nm</finalName>
+		<finalName>jersey-rest-mn</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
