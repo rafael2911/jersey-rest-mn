@@ -1,4 +1,4 @@
-package br.com.devmedia.jerseyrest.exceptions;
+package br.com.devmedia.jerseyrestmn.exceptions;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
@@ -6,7 +6,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import br.com.devmedia.jerseyrest.model.domain.ErrorMessage;
+import br.com.devmedia.jerseyrestmn.model.domain.ErrorMessage;
 
 @Provider
 public class WebApiExceptionMapper implements ExceptionMapper<WebApplicationException> {

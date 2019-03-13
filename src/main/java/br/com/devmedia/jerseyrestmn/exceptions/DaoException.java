@@ -1,4 +1,4 @@
-package br.com.devmedia.jerseyrest.exceptions;
+package br.com.devmedia.jerseyrestmn.exceptions;
 
 public class DaoException extends RuntimeException {
 

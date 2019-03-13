@@ -1,4 +1,4 @@
-package br.com.devmedia.jerseyrest.model.domain;
+package br.com.devmedia.jerseyrestmn.model.domain;
 
 public class ErrorMessage {
 	

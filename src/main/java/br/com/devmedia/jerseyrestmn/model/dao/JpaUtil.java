@@ -1,4 +1,4 @@
-package br.com.devmedia.jerseyrest.model.dao;
+package br.com.devmedia.jerseyrestmn.model.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
