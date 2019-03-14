@@ -62,6 +62,10 @@ public class EmpregadoDao {
 			em.close();
 		}
 		
+		if(empregados.isEmpty()) {
+			throw new DaoException("A lista de empregados com paginação está vazia!", ErrorCode.NOT_FOUND);
+		}
+		
 		return empregados;
 		
 	}
