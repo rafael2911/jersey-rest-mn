@@ -68,4 +68,9 @@ public class ProjetoResource {
 		return Response.noContent().build();
 	}
 	
+	@Path("/{projetoId}/empregados")
+	public ProjetoEmpregadoResource getProjetoEmpregadoResource() {
+		return new ProjetoEmpregadoResource();
+	}
+	
 }

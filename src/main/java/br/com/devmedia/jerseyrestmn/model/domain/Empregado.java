@@ -1,9 +1,14 @@
 package br.com.devmedia.jerseyrestmn.model.domain;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Empregado {
@@ -14,6 +19,10 @@ public class Empregado {
 	
 	private String nome;
 	private String cargo;
+	
+	@ManyToMany(mappedBy="empregados")
+	@JsonIgnore
+	private List<Projeto> projetos;
 	
 	public Long getId() {
 		return id;
