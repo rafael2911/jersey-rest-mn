@@ -10,7 +10,7 @@ public class ProjetoEmpregadoService {
 	
 	private ProjetoEmpregadoDao dao = new ProjetoEmpregadoDao();
 	
-	public void saveRlationship(Long projetoId, Long empregadoId) {
+	public void saveRelationship(Long projetoId, Long empregadoId) {
 		dao.saveRelationship(projetoId, empregadoId);
 	}
 	
