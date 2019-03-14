@@ -161,8 +161,9 @@ public class ProjetoDao {
 		try {
 			em.getTransaction().begin();
 			projeto = em.find(Projeto.class, projetoId);
+			em.remove(projeto);
 			em.getTransaction().commit();
-		}catch (NullPointerException ex) {
+		}catch (IllegalArgumentException ex) {
 			em.getTransaction().rollback();
 			throw new DaoException("Projeto não localizado!", ErrorCode.NOT_FOUND);
 		}catch (RuntimeException ex) {
